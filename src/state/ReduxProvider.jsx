@@ -15,12 +15,10 @@ export const ReduxProvider = ({ reducer, initialState, children }) => {
 
 export const useDispatch = () => {
   const { dispatch } = useContext(ReduxContext);
-
   return dispatch;
 };
 
 export const useSelector = (selectorFn) => {
   const { state } = useContext(ReduxContext);
-
   return selectorFn(state);
 };
