@@ -1,10 +1,10 @@
 /* eslint-disable keyword-spacing */
 import { UNDO, REDO, RECORD } from './actions';
 
-export const intialState = {
+export const initialState = {
   before: [],
   current: '#FF1122',
-  after: []
+  after: [],
 };
 
 export const reducer = (state, action) => {

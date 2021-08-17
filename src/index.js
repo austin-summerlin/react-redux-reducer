@@ -2,10 +2,10 @@ import React from 'react';
 import { render } from 'react-dom';
 import App from './components/app/App';
 import { ReduxProvider } from './state/ReduxProvider';
-import { intialState, reducer } from './state/reducer';
+import { initialState, reducer } from './state/reducer';
 
 render(
-  <ReduxProvider reducer={reducer} intialState={intialState}>
+  <ReduxProvider reducer={reducer} initialState={initialState}>
     <App />
   </ReduxProvider>,
   document.getElementById('root')
